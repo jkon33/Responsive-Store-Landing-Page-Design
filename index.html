@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Store Landing Page</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <!-- Logo -->
+    <div class="logo">MyStore</div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home" class="hero">
+    <h1>Welcome to MyStore</h1>
+    <p>Your one-stop shop for the best products</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <!-- ================= PRODUCTS ================= -->
+  <section id="products" class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="./food.jpeg" alt="Food" />
+        <h3>Foods</h3>
+        <p>We sells various food products to consumers for consumption.</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="./cosmetics.jpg" alt="Costmetics" />
+        <h3>Costmetics</h3>
+        <p>We sells various costmetics products to consumers and distributors worldwide.</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="./electronics.jpg" alt="Electronics" />
+        <h3>Electronics</h3>
+        <p>We sells various electronics products to consumers and distributors worldwide.</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="./books.jpeg" alt="Books" />
+        <h3>Books</h3>
+        <p>We sells various Books to consumers and distributors worldwide.</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT US ================= -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Our Story</h3>
+        <p>Founded in 2015, MyStore began as a small shop with big dreams. Today we're a leading online retailer serving customers worldwide.</p>
+      </div>
+      <div class="about-card">
+        <h3>Our Mission</h3>
+        <p>To provide exceptional value through quality products, competitive pricing, and outstanding customer service for everyone.</p>
+      </div>
+      <div class="about-card">
+        <h3>Our Values</h3>
+        <p>Quality, Integrity, and Customer Satisfaction are at the core of everything we do at MyStore.</p>
+      </div>
+      <div class="about-card">
+        <h3>Our Team</h3>
+        <p>Our dedicated team works tirelessly to ensure you get the best shopping experience possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT US ================= -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Visit Our Store</h3>
+        <p>123 Commerce Street<br>Cityville, ST 12345<br>United States</p>
+      </div>
+      <div class="contact-card">
+        <h3>Call Us</h3>
+        <p>Phone: (123) 456-7890<br>Fax: (123) 456-7891<br>Toll Free: 1-800-MY-STORE</p>
+      </div>
+      <div class="contact-card">
+        <h3>Email Us</h3>
+        <p>General: info@mystore.com<br>Support: support@mystore.com<br>Sales: sales@mystore.com</p>
+      </div>
+      <div class="contact-card">
+        <h3>Business Hours</h3>
+        <p>Monday - Friday: 9AM - 8PM<br>Saturday: 10AM - 6PM<br>Sunday: 11AM - 5PM</p>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form id="messageForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>&copy; 2025 MyStore. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Form submission handler
+    document.getElementById('messageForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! We will get back to you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
