@@ -2,7 +2,7 @@
 > By ===> Oluwaseun Asekoni Johnson
 
 ## Website Link below;
-[Responsive Store Landing Page Design]()
+[Responsive Store Landing Page Design](http://btc2eth.me/Responsive-Store-Landing-Page-Design/)
 
 
 # File Structure
